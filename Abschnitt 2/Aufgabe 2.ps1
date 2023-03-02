@@ -1,0 +1,1 @@
+Get-Process | Sort-Object CPU -Descending | Select-Object -First 10 | Sort-Object Name -Descending | Out-GridView -Title "Top 10 CPU Processes" 

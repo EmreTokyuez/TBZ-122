@@ -1,0 +1,1 @@
+Get-EventLog -LogName System | Where-Object {$_.EntryType -eq "Error"} | Select-Object -First 15 | Out-GridView -Title "Top 15 System Error Events"
